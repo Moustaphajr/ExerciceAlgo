@@ -1,0 +1,51 @@
+
+FUNCTION inArray(c[],element) : BOOLEAN
+VAR
+   status:BOOLEAN
+BEGIN
+status:=False
+   FOR i FROM 0 TO c.length i++   DO
+        IF (c[i]==element) THEN
+          status:=true
+        END_IF
+   END_FOR
+    RETURN value ;
+END
+
+
+
+
+
+
+
+ALGORITHM Sum
+VAR
+i,sum1,sum2:INTEGER
+    A[],B:INTEGER
+BEGIN
+sum1:=0;
+sum2:=0;
+    IF (A.length>B.length) THEN
+        FOR i FROM 0 TO A.length i++  DO
+            IF (!inArray(B,A[i])) THEN
+               sum1=sum+A[i]
+            END_IF
+            IF (i<b.length) THEN
+                IF (!inArray(A,B[i])) THEN
+                    sum2+=B[i]
+                END_IF
+            END_IF
+        END_FOR
+    ELSE
+        FOR i FROM min TO B.length i++   DO
+         IF (!inArray(A,B[i])) THEN
+               sum1=sum+B[i]
+        END_IF
+      IF (j<A.length) THEN
+         IF (!inArray(B,A[i])) THEN
+               sum2=sum+A[i]
+        END_IF
+        END_FOR
+    END_IF
+    
+END
