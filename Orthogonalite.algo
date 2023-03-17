@@ -12,12 +12,16 @@ BEGIN
             write("donner les coordonnées du second vecteur ")
             read(B[i])
         END_FOR
-        FOR i FROM 0 TO A.length i++   DO
-                Result+= A[i]*B[i]
-            END_FOR
-        END_FOR
-        RETURN Result
-   
+        IF(A.length==B.length)
+                FOR i FROM 0 TO A.length i++   DO
+                        Result+= A[i]*B[i]
+                END_FOR
+
+                RETURN Result
+        END_IF
+        ELSE
+        RETURN "les deux vecteurs ne sont pas egaux"
+
     
 END
 
