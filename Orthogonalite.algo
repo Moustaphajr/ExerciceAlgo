@@ -3,7 +3,7 @@ FUNCTION ProduitScalaire(A[],B[]) : entier
 VAR
     Result=0,i:entier
 BEGIN
-    IF (A.length==B.length) THEN
+  
         FOR i FROM 0 TO  A.length i++  DO
             write("donner les coordonnées  du premier vecteur")
             read(A[i])
@@ -13,15 +13,11 @@ BEGIN
             read(B[i])
         END_FOR
         FOR i FROM 0 TO A.length i++   DO
-            FOR i FROM 0 TO B.length i++  DO
                 Result+= A[i]*B[i]
             END_FOR
         END_FOR
         RETURN Result
-    END_IF
-    ELSE
-       RETURN "les deux vecteurs ne sont  pas égaux" ;
-    END_IF
+   
     
 END
 
